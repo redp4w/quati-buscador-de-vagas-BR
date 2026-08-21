@@ -1,0 +1,32 @@
+name: Relatar um problema
+description: Conte o que aconteceu sem incluir dados pessoais.
+body:
+  - type: markdown
+    attributes:
+      value: Não anexe currículos, bancos, `.env`, chaves, cookies ou imagens com dados pessoais.
+  - type: textarea
+    attributes:
+      label: Comportamento observado
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Como reproduzir
+      description: Use dados e URLs públicos ou sintéticos.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Ambiente
+      description: Informe o sistema, a versão do QUATI e como você fez a instalação.
+  - type: checkboxes
+    attributes:
+      label: Privacidade
+      options:
+        - label: Removi currículos, credenciais, logs sensíveis e dados pessoais do relato.
+          required: true

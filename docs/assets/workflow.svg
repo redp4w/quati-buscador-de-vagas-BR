@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 250" role="img" aria-labelledby="title desc">
+  <title id="title">Fluxo principal do Q.U.A.T.I.</title>
+  <desc id="desc">Perfil opcional, busca livre ou por compatibilidade, fontes públicas, currículo e candidatura.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FF1738"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="250" rx="2" fill="#060807"/>
+  <path d="M224 125H270M474 125H520M724 125H770M974 125H1020" stroke="#FF1738" stroke-width="4" marker-end="url(#arrow)"/>
+  <g font-family="Consolas, monospace" text-anchor="middle">
+    <g transform="translate(24 65)">
+      <rect width="200" height="120" rx="2" fill="#10150F" stroke="#3A5232" stroke-width="2"/>
+      <text x="100" y="48" fill="#A8FF60" font-size="16" font-weight="700" letter-spacing="1.5">01</text>
+      <text x="100" y="80" fill="#E6F6DF" font-size="24" font-weight="700">Perfil</text>
+      <text x="100" y="103" fill="#A7B5A1" font-size="15">opcional e cifrado</text>
+    </g>
+    <g transform="translate(274 65)">
+      <rect width="200" height="120" rx="2" fill="#10150F" stroke="#3A5232" stroke-width="2"/>
+      <text x="100" y="48" fill="#A8FF60" font-size="16" font-weight="700" letter-spacing="1.5">02</text>
+      <text x="100" y="80" fill="#E6F6DF" font-size="24" font-weight="700">Modo</text>
+      <text x="100" y="103" fill="#A7B5A1" font-size="15">livre ou Perfil ≥70%</text>
+    </g>
+    <g transform="translate(524 65)">
+      <rect width="200" height="120" rx="2" fill="#10150F" stroke="#3A5232" stroke-width="2"/>
+      <text x="100" y="48" fill="#A8FF60" font-size="16" font-weight="700" letter-spacing="1.5">03</text>
+      <text x="100" y="80" fill="#E6F6DF" font-size="24" font-weight="700">Busca</text>
+      <text x="100" y="103" fill="#A7B5A1" font-size="15">fontes + nota local</text>
+    </g>
+    <g transform="translate(774 65)">
+      <rect width="200" height="120" rx="2" fill="#10150F" stroke="#3A5232" stroke-width="2"/>
+      <text x="100" y="48" fill="#A8FF60" font-size="16" font-weight="700" letter-spacing="1.5">04</text>
+      <text x="100" y="80" fill="#E6F6DF" font-size="24" font-weight="700">Currículo</text>
+      <text x="100" y="103" fill="#A7B5A1" font-size="15">HTML, PDF e DOCX</text>
+    </g>
+    <g transform="translate(1024 65)">
+      <rect width="232" height="120" rx="2" fill="#FF1738"/>
+      <text x="116" y="48" fill="#060807" font-size="16" font-weight="700" letter-spacing="1.5">05</text>
+      <text x="116" y="80" fill="#FFFFFF" font-size="24" font-weight="700">Candidatura</text>
+      <text x="116" y="103" fill="#FFFFFF" font-size="15">no portal original</text>
+    </g>
+  </g>
+</svg>

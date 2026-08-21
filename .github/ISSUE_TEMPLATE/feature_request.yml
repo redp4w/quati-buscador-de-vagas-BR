@@ -1,0 +1,21 @@
+name: Sugestão de melhoria
+description: Sugira uma melhoria sem incluir dados pessoais nem URLs privadas.
+body:
+  - type: textarea
+    attributes:
+      label: Problema
+      description: O que esta melhoria ajudaria a resolver?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposta
+      description: Explique como você imagina o novo comportamento.
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Privacidade
+      options:
+        - label: Removi currículos, credenciais e dados pessoais do relato.
+          required: true

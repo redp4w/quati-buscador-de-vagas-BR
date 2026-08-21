@@ -1,0 +1,172 @@
+version: 1
+
+# Endereços públicos usados pela interface e pelos construtores de busca.
+# Para usar outro arquivo sem alterar o projeto, defina QUATI_SOURCES_FILE.
+# Segredos, tokens e cookies não devem ser colocados aqui.
+portals:
+  gupy:
+    access_url: https://portal.gupy.io/job-search/
+    search_url: https://employability-portal.gupy.io/api/v1/jobs
+  linkedin:
+    access_url: https://www.linkedin.com/jobs/
+    search_url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search
+  indeed:
+    access_url: https://br.indeed.com/
+    search_url: https://br.indeed.com/jobs
+  mindsight:
+    access_url: https://oportunidades.mindsight.com.br/
+    search_url: https://central.mindsight.com.br/api/v1/job-postings/
+  latojobs:
+    access_url: https://www.latojobs.com/jobs?country=Brazil
+    search_url: https://www.latojobs.com/jobs
+  geekhunter:
+    access_url: https://www.geekhunter.com/pt/
+  jobbol:
+    access_url: https://www.jobbol.com.br/
+    search_url: https://www.jobbol.com.br/cargos/
+  programathor:
+    access_url: https://programathor.com.br/jobs
+    search_url: https://programathor.com.br/jobs
+  vagas_com:
+    access_url: https://www.vagas.com.br/
+    search_url: https://www.vagas.com.br/
+  empregos:
+    access_url: https://www.empregos.com.br/
+    search_url: https://www.empregos.com.br/vagas/
+  bne:
+    access_url: https://www.bne.com.br/
+    search_url: https://www.bne.com.br/
+  empregando_brasil:
+    access_url: https://empregandobrasil.com.br/
+    search_url: https://empregandobrasil.com.br/buscar/
+  solides:
+    access_url: https://vagas.solides.com.br/vagas
+    search_url: https://apigw.solides.com.br/jobs/v3/portal-vacancies-new
+  burh:
+    access_url: https://burh.com.br/
+  99jobs:
+    access_url: https://99jobs.com/
+  trabalha_brasil:
+    access_url: https://www.trabalhabrasil.com.br/
+  adzuna:
+    access_url: https://www.adzuna.com.br/
+    search_url: https://api.adzuna.com/v1/api/jobs/br/search/1
+  pcd_com:
+    access_url: https://www.pcd.com.br/vagas-para-pcd
+  catho:
+    access_url: https://www.catho.com.br/
+  bebee:
+    access_url: https://bebee.com/br/jobs
+  trampos:
+    access_url: https://trampos.co/oportunidades/
+  infojobs:
+    access_url: https://www.infojobs.com.br/
+  glassdoor:
+    access_url: https://www.glassdoor.com.br/Job/index.htm
+  inhire:
+    access_url: https://www.inhire.com.br/produto
+  greenhouse:
+    access_url: https://job-boards.greenhouse.io/
+  lever:
+    access_url: https://jobs.lever.co/
+  ashby:
+    access_url: https://jobs.ashbyhq.com/
+  smartrecruiters:
+    access_url: https://careers.smartrecruiters.com/
+  recruitee:
+    access_url: https://recruitee.com/
+  workable:
+    access_url: https://www.workable.com/
+  workday:
+    access_url: https://www.myworkdayjobs.com/
+  personio:
+    access_url: https://www.personio.com/
+  vagas_remotas:
+    access_url: https://vagasremotas.net/
+  revelo:
+    access_url: https://www.revelo.com.br/
+  apinfo:
+    access_url: https://www.apinfo.com/
+  ciee:
+    access_url: https://portal.ciee.org.br/
+  nube:
+    access_url: https://www.nube.com.br/
+  iel:
+    access_url: https://www.portaldaindustria.com.br/iel/
+  jooble:
+    access_url: https://br.jooble.org/
+  remotar:
+    access_url: https://remotar.com.br/
+  quickin:
+    access_url: https://quickin.io/
+  abler:
+    access_url: https://abler.com.br/
+  pandape:
+    access_url: https://www.pandape.com.br/
+  recrutei:
+    access_url: https://recrutei.com.br/
+  bamboohr:
+    access_url: https://www.bamboohr.com/
+  sap_successfactors:
+    access_url: https://www.sap.com/brazil/products/hcm/recruiting-software.html
+  oracle_recruiting:
+    access_url: https://www.oracle.com/br/human-capital-management/recruiting/
+
+# Páginas públicas de empresas que complementam a pesquisa geral do portal.
+# O filtro por cargo, localização e modalidade continua sendo aplicado localmente.
+companies:
+  - id: honda
+    name: Honda
+    source: gupy
+    url: https://honda.gupy.io/
+    enabled: true
+  - id: teltecsolutions
+    name: Teltec Solutions
+    source: gupy
+    url: https://teltecsolutions.gupy.io/
+    enabled: true
+  - id: sharepeoplehub
+    name: Share People Hub
+    source: inhire
+    url: https://sharepeoplehub.inhire.app/vagas
+    enabled: true
+  - id: residclub
+    name: Resid Club
+    source: inhire
+    url: https://residclub.inhire.app/vagas
+    enabled: true
+  - id: ifood
+    name: iFood
+    source: greenhouse
+    url: https://job-boards.greenhouse.io/ifoodcarreiras
+    enabled: true
+  - id: quintoandar
+    name: Grupo QuintoAndar
+    source: greenhouse
+    url: https://job-boards.greenhouse.io/quintoandar
+    enabled: true
+  - id: xpinc
+    name: XP Inc.
+    source: greenhouse
+    url: https://job-boards.greenhouse.io/xpinc
+    enabled: true
+  - id: stone
+    name: Stone
+    source: greenhouse
+    url: https://job-boards.greenhouse.io/stonepatrocina
+    enabled: true
+  - id: ciandt
+    name: CI&T
+    source: lever
+    url: https://jobs.lever.co/ciandt
+    enabled: true
+  - id: bosch
+    name: Bosch Brasil
+    source: smartrecruiters
+    url: https://careers.smartrecruiters.com/BoschGroup/brazil
+    enabled: true
+  - id: sgs
+    name: SGS Brasil
+    source: smartrecruiters
+    url: https://careers.smartrecruiters.com/SGS
+    enabled: true

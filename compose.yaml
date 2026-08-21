@@ -1,0 +1,57 @@
+services:
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:8501:8501"
+    volumes:
+      - ./data:/app/data
+    environment:
+      QUATI_DB: /app/data/quati.sqlite3
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    read_only: true
+    tmpfs:
+      - /tmp
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8501/_stcore/health', timeout=3)"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  scheduler:
+    build: .
+    profiles: ["automation"]
+    command: >
+      /bin/sh -c 'while true; do quati run-due; sleep 900; done'
+    volumes:
+      - ./data:/app/data
+    environment:
+      QUATI_DB: /app/data/quati.sqlite3
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    read_only: true
+    tmpfs:
+      - /tmp
+
+  ollama:
+    image: ollama/ollama:0.32.0
+    profiles: ["ai"]
+    volumes:
+      - ollama-data:/root/.ollama
+    ports:
+      - "127.0.0.1:11434:11434"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+volumes:
+  ollama-data:

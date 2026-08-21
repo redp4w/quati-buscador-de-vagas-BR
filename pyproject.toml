@@ -1,0 +1,73 @@
+[build-system]
+requires = ["hatchling>=1.31.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "quati"
+version = "0.3.0"
+description = "Buscador de vagas públicas BR"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE", "BRAND_ASSET_LICENSE.md", "THIRD_PARTY_NOTICES.md"]
+authors = [{ name = "Q.U.A.T.I. contributors" }]
+keywords = ["vagas", "brasil", "privacidade", "streamlit", "playwright", "sqlite"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+  "beautifulsoup4>=4.12,<5",
+  "cryptography>=50,<51",
+  "geonamescache>=3.0,<4",
+  "httpx>=0.27,<1",
+  "keyring>=25.6,<26",
+  "loguru>=0.7,<1",
+  "playwright>=1.47,<2",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2.6,<3",
+  "pypdf>=6.16.1,<7",
+  "pyyaml>=6.0,<7",
+  "python-docx>=1.1,<2",
+  "streamlit>=1.62,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "bandit>=1.9,<2",
+  "pillow>=11,<13",
+  "pip-audit>=2.9,<3",
+  "pytest>=8.3,<10",
+  "ruff>=0.16.4,<1",
+]
+
+[project.scripts]
+quati = "quati.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/redp4w/quati-buscador-de-vagas-BR"
+Repository = "https://github.com/redp4w/quati-buscador-de-vagas-BR"
+Issues = "https://github.com/redp4w/quati-buscador-de-vagas-BR/issues"
+Documentation = "https://github.com/redp4w/quati-buscador-de-vagas-BR#readme"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/quati"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"config/job_sources.yml" = "quati/config/job_sources.yml"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

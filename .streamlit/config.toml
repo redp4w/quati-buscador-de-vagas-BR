@@ -1,0 +1,55 @@
+[server]
+address = "127.0.0.1"
+port = 8501
+headless = false
+enableCORS = true
+enableXsrfProtection = true
+maxUploadSize = 10
+maxMessageSize = 20
+runOnSave = false
+fileWatcherType = "none"
+
+[client]
+showErrorDetails = "none"
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+primaryColor = "#FF1738"
+backgroundColor = "#060807"
+secondaryBackgroundColor = "#10150F"
+textColor = "#E6F6DF"
+linkColor = "#72F4FF"
+borderColor = "#3A5232"
+dataframeBorderColor = "#34452F"
+dataframeHeaderBackgroundColor = "#23060C"
+font = "monospace"
+headingFont = "monospace"
+codeFont = "monospace"
+baseFontSize = 15
+baseFontWeight = 400
+codeFontSize = "0.85rem"
+baseRadius = "2px"
+buttonRadius = "2px"
+showWidgetBorder = true
+showSidebarBorder = true
+linkUnderline = false
+headingFontSizes = ["2.1rem", "1.5rem", "1.2rem", "1.05rem", "0.95rem", "0.85rem"]
+headingFontWeights = [800, 800, 700, 700, 700, 700]
+greenColor = "#A8FF60"
+yellowColor = "#FFE66D"
+redColor = "#FF1738"
+blueColor = "#72F4FF"
+violetColor = "#D783FF"
+orangeColor = "#FF9F43"
+chartCategoricalColors = ["#FF1738", "#A8FF60", "#72F4FF", "#FFE66D", "#D783FF"]
+
+[theme.sidebar]
+backgroundColor = "#020303"
+secondaryBackgroundColor = "#25050B"
+primaryColor = "#FF1738"
+textColor = "#F7FFF3"
+linkColor = "#72F4FF"
+borderColor = "#7A1022"
