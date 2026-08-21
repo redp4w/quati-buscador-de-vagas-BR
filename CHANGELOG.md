@@ -26,8 +26,8 @@ Todas as mudanças relevantes deste projeto são registradas aqui. O formato seg
 - caminhada corrigida para as oito poses originais em ordem, sem interpolação generativa;
 - tabela de vagas com ações mais legíveis nas duas primeiras colunas;
 - documentação de instalação, privacidade, criptografia, fluxo e publicação revisada.
-- dependências de manutenção atualizadas, incluindo Streamlit 1.62, pypdf 6.16.1, Ruff 0.16.4 e a
-  ação `setup-uv` revisada pelo Dependabot.
+- dependências de manutenção atualizadas, incluindo Streamlit 1.62, pypdf 6.16.1, Ruff 0.16.4,
+  Hatchling 1.32 e `setup-uv` 10.0.1.
 
 ### Segurança
 
