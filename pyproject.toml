@@ -22,7 +22,7 @@ classifiers = [
 ]
 dependencies = [
   "beautifulsoup4>=4.12,<5",
-  "cryptography>=50,<51",
+  "cryptography>=50.0.1,<51",
   "geonamescache>=3.0,<4",
   "httpx>=0.27,<1",
   "keyring>=25.6,<26",
