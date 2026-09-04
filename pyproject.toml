@@ -42,7 +42,7 @@ dev = [
   "pillow>=11,<13",
   "pip-audit>=2.9,<3",
   "pytest>=8.3,<10",
-  "ruff>=0.16.4,<1",
+  "ruff>=0.16.5,<1",
 ]
 
 [project.scripts]
